@@ -6,8 +6,10 @@ public class Main {
             System.out.println(counter);
         }
 
-        System.out.println(calculateInterest(10000.0, 2.0));
-
+        for(double rate = 2.0; rate <= 5.0; rate++){
+            double interestAmount = calculateInterest(10000.0, rate);
+            System.out.println("£10,000 at "+ rate + "% rate of interest =" + interestAmount);
+        }
     }
 
     public static double calculateInterest (double amount, double interestRate) {
